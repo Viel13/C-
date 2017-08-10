@@ -1,1 +1,7 @@
 C:\Users\logonrm\2TDSR-Enterprise\Fiap.HelloWorld\Fiap.HelloWorld.UI\bin\Debug\Fiap.HelloWorld.UI.exe.config
+C:\Users\logonrm\C-\Fiap.HelloWorld\Fiap.HelloWorld.UI\bin\Debug\Fiap.HelloWorld.UI.exe.config
+C:\Users\logonrm\C-\Fiap.HelloWorld\Fiap.HelloWorld.UI\obj\Debug\Fiap.HelloWorld.UI.csprojResolveAssemblyReference.cache
+C:\Users\logonrm\C-\Fiap.HelloWorld\Fiap.HelloWorld.UI\bin\Debug\Fiap.HelloWorld.UI.exe
+C:\Users\logonrm\C-\Fiap.HelloWorld\Fiap.HelloWorld.UI\bin\Debug\Fiap.HelloWorld.UI.pdb
+C:\Users\logonrm\C-\Fiap.HelloWorld\Fiap.HelloWorld.UI\obj\Debug\Fiap.HelloWorld.UI.exe
+C:\Users\logonrm\C-\Fiap.HelloWorld\Fiap.HelloWorld.UI\obj\Debug\Fiap.HelloWorld.UI.pdb

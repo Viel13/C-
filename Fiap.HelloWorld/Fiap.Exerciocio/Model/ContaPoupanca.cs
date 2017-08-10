@@ -8,28 +8,38 @@ namespace Fiap.Exerciocio.Model
 {
     class ContaPoupanca : Conta, IContaInvestimento
     {
-        private float _rendimento;
+        private readonly decimal _rendimento;
 
-        private int Taxa { get; set; }
+        public decimal Taxa { get; set; }
 
 
-        public ContaPoupanca(int agencia, DateTime dataNasc, int numero, double saldo) : base(agencia, dataNasc, numero, saldo)
+        public ContaPoupanca(int agencia, DateTime dataNasc, int numero, decimal saldo, decimal red) : base(agencia, dataNasc, numero, saldo)
         {
+            _rendimento = red;
         }
 
-        public override void Depositar()
+        
+        
+      
+
+        
+        public override void Depositar(decimal valor)
         {
-            Console.WriteLine("Caiu a grana");
+            Saldo += valor;
         }
 
-        public override void Retirar()
+        public override void Retirar(decimal valor)
         {
-            Console.WriteLine("Ta acabando a grana");
+            if(Saldo < valor + Taxa)
+            {
+                throw new Exception("Saldo insuficiente");
+            }
+            Saldo -= valor;
         }
 
-        public void EstorouOLimite()
+        public decimal EstorouOLimite()
         {
-            Console.WriteLine("Jaera");
+            return Saldo * _rendimento;
         }
     }
 }

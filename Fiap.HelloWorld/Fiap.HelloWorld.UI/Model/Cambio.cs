@@ -8,6 +8,6 @@ namespace Fiap.HelloWorld.UI.Model
 {
     enum Cambio
     {
-        Automatico, Manual, Automatizado;
+        Automatico, Manual, Automatizado
     }
 }

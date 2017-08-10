@@ -8,7 +8,7 @@ namespace Fiap.Exerciocio.Model
 {
     interface IContaInvestimento
     {
-        void EstorouOLimite();
+        decimal EstorouOLimite();
         
     }
 }

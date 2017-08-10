@@ -10,14 +10,18 @@ namespace Fiap.Exerciocio
     {
         static void Main(string[] args)
         {
-            ContaCorrente cs = new ContaCorrente(123, DateTime.Now, 1234, 1000.10)
+            ContaCorrente cs = new ContaCorrente(123, DateTime.Now, 1234, 100.10m)
             {
                 TipoConta1 = TipoConta.COMUN
             };
 
-        ContaPoupanca cp = new ContaPoupanca(124, DateTime.Now, 1235, 20000.0);
            
 
+        ContaPoupanca cp = new ContaPoupanca(124, DateTime.Now, 1235, 20000.0m, 1000.0m);
+
+            cp.Depositar(1000.0m);
+
+            
 
         }
     }

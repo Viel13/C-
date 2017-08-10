@@ -8,21 +8,19 @@ namespace Fiap.Exerciocio.Model
 {
     abstract class Conta
     {
-        private int Agencia { get; set; }
-        private DateTime DataNasc { get; set; }
-        private int Numero { get; set; }
-        private double Saldo { get; set; }
+        public int Agencia { get; set; }
+        public DateTime DataNasc { get; set; }
+       public int Numero { get; set; }
+        public decimal Saldo { get; set; }
 
        
-        public abstract void Depositar();
+        public abstract void Depositar(decimal valor);
 
-        public virtual void Retirar()
-        {
-            Console.WriteLine("Saiu o seu dinheiro");
+        public abstract void Retirar(decimal valor);
+                   
+               
 
-        }
-
-        public Conta(int agencia, DateTime dataNasc, int numero, double saldo)
+        public Conta(int agencia, DateTime dataNasc, int numero, decimal saldo)
         {
             Agencia = agencia;
             DataNasc = dataNasc;

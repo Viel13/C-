@@ -8,22 +8,25 @@ namespace Fiap.Exerciocio.Model
 {
     class ContaCorrente : Conta
     {
-        public ContaCorrente(int agencia, DateTime dataNasc, int numero, double saldo) : base(agencia, dataNasc, numero, saldo)
+        public ContaCorrente(int agencia, DateTime dataNasc, int numero, decimal saldo) : base(agencia, dataNasc, numero, saldo)
         {
         }
 
         public TipoConta TipoConta1 { get; set; }
 
-
-
-        public override void Depositar()
+        public override void Depositar(decimal valor)
         {
-            Console.WriteLine("Seu Dinheiro Foi depositado");
+            Saldo += valor;
+            
         }
 
-        public override void Retirar()
+        public override void Retirar(decimal valor)
         {
-            Console.WriteLine("Moto Parou");
+            if (TipoConta1 == TipoConta.COMUN && Saldo < valor)
+            {
+                throw new Exception("Saldo Insuficiente");
+            }
+            Saldo -= valor;
         }
     }
 }
